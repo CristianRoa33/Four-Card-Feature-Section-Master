@@ -17,3 +17,43 @@
 --White: hsl(0, 0%, 100%);
 }
 
+body {
+    background-color: var(--White);
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 63px 48px 5px 48px;
+}
+
+main h1 {
+    font-size: 22px;
+    color: var(--Grey-500);
+    margin-bottom: 22px;
+}
+
+
+article {
+    width: 316px;
+    height: 249px;
+    border: 1px solid var(--Grey-400);
+    border-radius: 8px;
+    margin:32px;
+}
+
+
+
+
+footer {
+    margin-bottom: 10px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
