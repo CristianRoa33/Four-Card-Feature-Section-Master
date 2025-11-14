@@ -74,7 +74,7 @@ article {
     " h3 h3"
     "p p"
     "image image";
-    gap: 0.5rem;
+    gap: 0.1rem;
 }
 
 article h3 {
@@ -82,13 +82,16 @@ article h3 {
     text-align: left;
     color: var(--Grey-500);
     font-weight: 600;
+    padding: 1px 10px;
 }
 
 article p {
     grid-area: p ;
     color: var(--Grey-400);
-    font-size: 13px;
+    font-size: 14px;
     text-align: left;
+    line-height: 20px;
+    padding: 1px 10px;
 }
 
 article .image {
@@ -108,11 +111,11 @@ article .image {
 }
 
 .card-karma{
-    border-top: 6px solid var(--Red);
+    border-top: 6px solid var(--Orange);
 }
 
 .card-calculator{
-    border-top: 6px solid var(--Red);
+    border-top: 6px solid var(--Blue);
 }
 
 
