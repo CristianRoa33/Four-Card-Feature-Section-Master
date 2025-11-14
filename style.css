@@ -103,19 +103,19 @@ article .image {
 
 
 .card-supervisor {
-    border-top: 6px solid var(--Cyan);
+    border-top: 4px solid var(--Cyan);
 }
 
 .card-team{
-    border-top: 6px solid var(--Red);
+    border-top: 4px solid var(--Red);
 }
 
 .card-karma{
-    border-top: 6px solid var(--Orange);
+    border-top: 4px solid var(--Orange);
 }
 
 .card-calculator{
-    border-top: 6px solid var(--Blue);
+    border-top: 4px solid var(--Blue);
 }
 
 
