@@ -19,7 +19,11 @@
 
 body {
     background-color: var(--White);
-    padding: 63px 48px 5px 48px;
+    padding: 113px 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
@@ -31,42 +35,57 @@ header {
 }
 
 header h1 {
-    font-size: 22px;
+    font-size: 41px;
     color: var(--Grey-500);
     margin-bottom: 22px;
     font-weight: 600;
 }
 
 header h2 {
-    font-size: 22px;
+    font-size: 40px;
     color:var(--Grey-400);
     font-weight: 400;
 }
 
 header p {
-    font-size: 14px;
+    font-size: 15px;
+    width: 509px;
     color: var(--Grey-400);
     line-height: 25px;
     margin-bottom: 20px; 
 }
 
-main {
+.container {
+    width: 1150px;
+    height: 533px;
     display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:20px 20px;
+    margin-bottom: 50px;
+    padding: 1px 15px;
 }
 
+.card-supervisor {
+    grid-area: 2/ 2 / 4 / 3;
+}
+.card-team {
+    grid-area: 1 / 3 / 3 / 4;
+}
+.card-karma {
+    grid-area: 4 / 3 / 3 / 4;
+}
+.card-calculator {
+    grid-area: 2 / 4 / 4 / 5;
+}
 
 article {
-    width: 316px;
-    height: 249px;
+    width: 352px;
+    height: 251px;
     border: 2px transparent var(--Grey-400);
     border-radius: 8px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.10);
     padding:35px 20px 47px 20px ;
-    margin:32px;
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto auto auto;
@@ -100,25 +119,27 @@ article .image {
     margin:15px 10px;
 }
 
-
-
 .card-supervisor {
     border-top: 4px solid var(--Cyan);
+   
 }
 
 .card-team{
     border-top: 4px solid var(--Red);
+    
 }
 
 .card-karma{
     border-top: 4px solid var(--Orange);
+   
+    
 }
 
 .card-calculator{
     border-top: 4px solid var(--Blue);
+   
+    
 }
-
-
 
 footer {
     margin-bottom: 10px;
@@ -129,4 +150,62 @@ footer {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+/* Responsive Design */
+
+
+@media (max-width: 375px) {
+    .container {
+    width: 350px;
+    height: 1107px;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 32px;
+}
+
+body {
+    padding: 63px 40px 45px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+}
+
+
+header h1 {
+    font-size: 22px;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+header p {
+    width: 296px;
+    font-size: 14px;
+}
+
+.card-supervisor {
+    grid-column: 1;
+    grid-row: 1;
+}
+.card-team {
+    grid-column: 1;
+    grid-row: 2;
+}
+.card-karma {
+    grid-column: 1;
+    grid-row: 3;
+}
+.card-calculator {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+article {
+    width: 310px;
+    height: 249px;
+}
+
 }
